@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking User Dashboard</title>
+    
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./src/style/style.css" />
+
+    <!-- Bank Script File -->
+    <script src="./src/js/bank.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- Balance & Transection: Start -->
+      <section class="container user-dashboard">
+        <div class="dashboard-title">
+          <h1>Money Dashboard</h1>
+        </div>
+        <div class="dashboard-wrapper">
+          <div class="dash">
+            <h2>Deposite</h2>
+            <h1>$<span id="deposite-current-ammount">00</span></h1>
+          </div>
+          <div class="dash">
+            <h2>Withdraw</h2>
+            <h1>$<span id="withdraw-current-ammount">00</span></h1>
+          </div>
+          <div class="dash">
+            <h2>Balance</h2>
+            <h1>$<span id="balance-current-ammount">234</span></h1>
+          </div>
+        </div>
+      </section>
+      <!-- Balance & Transection: End -->
+
+      <!-- Deposite & Widthdraw: Start -->
+      <section class="container deposite-withdraw">
+        <div class="dash dash-input">
+          <h2>Please Deposite</h3>
+          <form class="dw-form">
+            <input id="deposite-input" type="text" placeholder="$ Ammount">
+            <input class="login-btn" id="deposite-btn" type="button" value="Deposite">
+          </form>
+        </div>
+        <div class="dash dash-input">
+            <h2>Please Withdraw</h2>
+            <form class="dw-form">
+                <input id="withdraw-input" type="text" placeholder="$ Ammount">
+                <input class="login-btn" id="withdraw-btn"type="button" value="Withdraw">
+              </form>
+          </div>
+      </section>
+      <!-- Deposite & Widthdraw: End -->
+    </main>
+  </body>
+</html>

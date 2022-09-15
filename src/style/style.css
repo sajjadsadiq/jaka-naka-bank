@@ -1,0 +1,151 @@
+:root{
+  --main-clr: #FA7070;
+  --black-clr: #181818;
+  --black-secondary-clr: #483838; 
+  --bg-clr: #f2f2f2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg-clr);
+  font-family: monospace;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form-box {
+  width: 400px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 0.4rem;
+}
+
+.form-box-wrapper {
+  padding: 2rem;
+  text-align: center;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.form-title h1 {
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+.form input {
+  width: 100%;
+  padding: 1rem 0.4rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  border-radius: .4rem;
+
+}
+
+
+.form {
+  margin-top: 3rem;
+}
+
+.login-btn{
+  background-color: var(--main-clr);
+  color: var(--bg-clr);
+  border: none;
+  outline: none;
+  
+}
+
+.form-box-wrapper > a {
+  font-size: 1rem;
+}
+
+.form-title p {
+  font-size: 22px;
+  color: var(--main-clr);
+  font-size: 1.8rem;
+}
+
+/* Banking:Start */
+.dashboard-title {
+  margin-bottom: 4rem;
+}
+
+.dashboard-title h1 {
+  font-size: 4.5rem;
+  text-align: center;
+}
+.dashboard-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Media */
+@media (max-width: 920px) {
+  .dashboard-wrapper {
+    flex-direction: column;
+  }
+  .dash {
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+}
+
+.dash {
+  background-color: white;
+  border-radius: 0.4rem;
+  padding: 2.5rem 7rem 2.5rem 3rem;
+}
+
+
+.dash h1 {
+  font-size: 3.5rem;
+  color: var(--main-clr);
+}
+
+
+/* Banking:End */
+
+/* Deposite & Widthraw: Start */
+.deposite-withdraw {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.dw-form input {
+  width: 100%;
+  padding: .8rem 0.4rem;
+  outline: none;
+  font-size: 1rem;
+  margin-top: 0.6rem;
+  border-radius: .4rem;
+}
+
+@media (max-width: 920px) {
+  .deposite-withdraw {
+    flex-direction: column;
+  }
+  .dash {
+    width: 70%;
+    margin-bottom: 2rem;
+    padding: 2rem;
+  }
+}
+/* Deposite & Widthraw: End */
